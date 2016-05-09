@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'sw-link';
+  src: url('chrome-extension://__MSG_@@extension_id__/css/fonts/sw-link.eot'); /* IE9 Compat Modes */
+  src: url('chrome-extension://__MSG_@@extension_id__/css/fonts/sw-link.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('chrome-extension://__MSG_@@extension_id__/css/fonts/sw-link.woff') format('woff'), /* Modern Browsers */
+       url('chrome-extension://__MSG_@@extension_id__/css/fonts/sw-link.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('chrome-extension://__MSG_@@extension_id__/css/fonts/sw-link.svg#941e54eaa3e81df898e4fed24c7a34e3') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 325px;
+  height: 100px;
+  margin: 0px;
+  background-color: rgba( 17, 17, 17, 0.97);
+  color: #16f3fd;
+  font-family: 'sw-link';
+}
+
+body>div {
+  width: 80%;
+}
+
+.button {
+  font-size: 14px;
+  margin: 6px 0;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;  
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #fff;
+}

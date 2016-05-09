@@ -1,0 +1,33 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+
+   "manifest_version": 2,
+   
+   "name": "Radical-6 Vaccine: The Zero Time Dilemma Spoilers Blocker",
+   "short_name": "Radical-6 Vaccine",
+   "version": "1.0.0",
+   "description": "Block pages containing spoilers from Zero Time Dilemma, with smart pattern detection and a whitelist for false alarms. (Modification of the Force Blocker Browser Extension)",
+   "icons": {
+      "128": "/img/icon128.png",
+      "16": "/img/icon16.png",
+      "48": "/img/icon48.png"
+   },
+
+   "browser_action": {
+      "default_icon": "/img/icon.png",
+      "default_popup": "/popup/popup.html"
+   },
+
+   "content_scripts": [{
+      "css": [ "/css/style.css" ],
+      "js": [ "/js/content.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   }],
+
+   "permissions": [ "activeTab", "management", "storage" ],
+
+   "web_accessible_resources": [ "/*" ]
+
+}
